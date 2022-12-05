@@ -1,7 +1,7 @@
 import pandas as pd
 
-archivo=r'C:\Users\denni\Downloads\BASE DE DATOS CAMPAÑA PROXIMOS A VENCER NOVIEMBRE 2022.xlsx'
-df = pd.read_excel(archivo, sheet_name='PROXIMOS A VENCER NOVIEMBRE', engine='openpyxl')
+archivo=r'C:\Users\denni\Downloads\BASE DE DATOS CAMPAÑA PROXIMOS A VENCER DICIEMBRE 2022.xlsx'
+df = pd.read_excel(archivo, sheet_name='PROXIMOS A VENCER DICIEMBRE', engine='openpyxl')
 
 filtered_df = df[df['RESPONSABLE']=='CAMILO MARTINEZ']
 
@@ -14,7 +14,7 @@ for i in list_soat:
     list_fecha = i.strftime('%d / %m / %Y')
     fecha.append(list_fecha)
 
-list_placa = list(filtered_df['PLACA'])
+list_placa = list(filtered_df['CEDULA'])
 
 list_correo= list(filtered_df['CORREO'])
 
