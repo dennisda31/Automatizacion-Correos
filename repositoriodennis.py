@@ -1,9 +1,9 @@
 import pandas as pd
 
-archivo=r'C:\Users\denni\Downloads\BASE DE DATOS CAMPAÑA PROXIMOS A VENCER SEPTIEMBRE 2022.xlsx'
-df = pd.read_excel(archivo, sheet_name='PROXIMOS A VENCER SEPTIEMBRE', engine='openpyxl')
+archivo=r'C:\Users\denni\Downloads\BASE DE DATOS CAMPAÑA PROXIMOS A VENCER OCTUBRE 2022.xlsx'
+df = pd.read_excel(archivo, sheet_name='PROXIMOS A VENCER OCTUBRE', engine='openpyxl')
 
-filtered_df = df[df['RESPONSABLE']=='MELISA OTALORA']
+filtered_df = df[df['RESPONSABLE']=='DANIEL GONZALEZ']
 
 list_name = list(filtered_df['NOMBRE'])
 
